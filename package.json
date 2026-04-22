@@ -30,6 +30,7 @@
     },
     "dependencies": {
         "@emotion/babel-plugin": "^11.13.5",
+        "@emotion/css": "^11.13.5",
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.1",
         "@inertiajs/react": "^3.0.0",

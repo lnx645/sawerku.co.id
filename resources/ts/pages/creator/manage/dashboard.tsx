@@ -132,6 +132,13 @@ export default function Dashboard() {
             desc: 'Set target impianmu dan ajak penonton untuk bantu mewujudkannya.',
             color: '#E0C3FC', // Ungu Muda
         },
+          {
+            id: 7,
+            name: 'Profile & Page',
+            img: 'https://www.svgrepo.com/show/513331/medal.svg', // Mengganti ikon biar beda dari integration
+            desc: 'Set target impianmu dan ajak penonton untuk bantu mewujudkannya.',
+            color: '#E0C3FC', // Ungu Muda
+        },
     ];
 
     return (
