@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import TextParagraph from '@/components/typography/TextParagraf';
 
-
+import { motion } from 'motion/react';
 const DashboardContainer = styled.div`
     padding: 10px 0rem;
     max-width: 1200px;
@@ -86,7 +86,7 @@ const ImageContainer = styled.div({
     alignItems: 'end',
     objectFit: 'cover',
 });
-
+const MotionCard = motion.create(Card);
 export default function Dashboard() {
     const menuList = [
         {
@@ -143,7 +143,7 @@ export default function Dashboard() {
             </TextParagraph>
             <MenuGrid>
                 {menuList.map((item) => (
-                    <Card key={item.id} bgColor={item.color}>
+                    <MotionCard key={item.id} bgColor={item.color}>
                         {item.isNew && <Badge>NEW!</Badge>}
                         <div>
                             <CardTitle>{item.name}</CardTitle>
@@ -152,7 +152,7 @@ export default function Dashboard() {
                         <ImageContainer>
                             <img src={item.img} alt="" />
                         </ImageContainer>
-                    </Card>
+                    </MotionCard>
                 ))}
             </MenuGrid>
         </DashboardContainer>

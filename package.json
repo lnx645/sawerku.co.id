@@ -45,6 +45,7 @@
         "facepaint": "^1.2.1",
         "globals": "^15.14.0",
         "laravel-vite-plugin": "^3.0.0",
+        "motion": "^12.38.0",
         "react": "^19.2.0",
         "react-avatar": "^5.0.4",
         "react-dom": "^19.2.0",
